@@ -11,5 +11,5 @@ def bubble_sort(lst):
 
     return lst
 
-result = list(map(int, input().split()))  # Take integer input and convert it to a list
+result = list(map(int, input().split()))
 print(bubble_sort(result))
