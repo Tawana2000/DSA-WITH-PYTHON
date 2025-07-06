@@ -12,5 +12,5 @@ def bubble_sort(data):
             break
     return data
 
-data_list = [4,6,99,45,0]
+data_list = [4,6,99,45,0, 11]
 print(bubble_sort(data_list))
