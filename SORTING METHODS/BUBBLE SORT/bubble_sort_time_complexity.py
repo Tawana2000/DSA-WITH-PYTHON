@@ -34,7 +34,7 @@ def bubble_sort_tc(lst):
 
     return lst
 
-lst = [7,6,5,4,3,2,1,12]
+lst = [7,6,5,4,3,2,1]
 print(bubble_sort_tc(lst))
 
 
