@@ -1,4 +1,4 @@
-# Visualize dividing the list recursively 
+# Visualize dividing the list recursively
 
 def merge_sort(lst):
 
