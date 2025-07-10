@@ -20,4 +20,4 @@ def merge(left, right):
 
     return output
 
-print(merge([4, 5], [2, 3, 7, 9]))
+print(merge([4, 5], [2, 3, 7, 9])) 
