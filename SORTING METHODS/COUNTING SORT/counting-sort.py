@@ -14,3 +14,6 @@ def counting_sort(lst):
         sorted_output.extend([index] * value)
 
     return sorted_output
+
+input_list = [3, 7, 4, 12, 9, 0, 6, 2, 14, 5]
+print(f"Unsorted List: {input_list}")
