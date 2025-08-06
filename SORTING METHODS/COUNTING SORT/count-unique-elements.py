@@ -16,3 +16,5 @@
             unique_count += 1
 
     return unique_count
+
+lst = list(map(int, input("Enter the list elements separated by a space: ").split()))
