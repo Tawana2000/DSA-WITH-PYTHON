@@ -17,3 +17,5 @@ def counting_sort(lst):
         sorted_output.extend([index] * counting_list[index])
 
     return sorted_output
+
+lst = list(map(int, input("Enter the list elements separated by space: ").split()))
