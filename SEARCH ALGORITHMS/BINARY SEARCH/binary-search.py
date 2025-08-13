@@ -18,3 +18,12 @@ def binary_search(lst, target):
             low = mid + 1
 
     return None
+
+lst = [4, 5, 9, 12, 55, 79, 88, 99]
+target = int(input("Enter the target element: "))
+result = binary_search(lst, target)
+
+if result:
+    print(f"Element {target} is found at index {result}")
+else:
+    print(f"Element {target} wasn't found in the list {lst}")
