@@ -10,3 +10,6 @@ Perform these operations on the animals list:
 - Insert 'Moose' at the third position in the animals list.
 - Print the animals list.
 """
+
+animals = ['Dog', 'Cat']
+wild_animals = ['Tiger', 'Coyote']
