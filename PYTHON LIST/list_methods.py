@@ -21,4 +21,4 @@ animals.pop(2)
 animals.pop()
 animals.insert(2, 'Moose')
 
-
+print(animals)
