@@ -22,3 +22,6 @@ class LinkedList:
 
         node3 = Node(17)
         node2.next = node3
+
+LinkedList = LinkedList()
+LinkedList.create_linked_list()
