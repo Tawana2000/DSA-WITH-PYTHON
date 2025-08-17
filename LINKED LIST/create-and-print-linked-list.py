@@ -36,3 +36,7 @@ class LinkedList:
             print(f"{current.data}", end="->")
             current = current.next
         print(None)
+
+linked_list = LinkedList()
+linked_list.create_linked_list()
+linked_list.traverse_linked_list()
