@@ -28,3 +28,10 @@ class LinkedList:
 
         node4 = Node(data4)
         node3.next = node
+        def traverse_linked_list(self):
+        current = self.head
+
+        while current:
+            print(f"{current.data}", end="->")
+            current = current.next
+        print(None)
