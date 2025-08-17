@@ -28,7 +28,8 @@ class LinkedList:
 
         node4 = Node(data4)
         node3.next = node
-        def traverse_linked_list(self):
+        
+    def traverse_linked_list(self):
         current = self.head
 
         while current:
