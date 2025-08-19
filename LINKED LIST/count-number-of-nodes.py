@@ -20,3 +20,14 @@ class Linkedlist:
 
         node3 = Node(2)
         node2.next = node3
+        
+    def count_elements(self):
+        current = self.head
+
+        count = 0
+
+        while current:
+            count += 1
+            current = current.next
+
+        return count
