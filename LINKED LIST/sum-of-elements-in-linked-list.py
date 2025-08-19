@@ -32,3 +32,8 @@ class Linkedlist:
             current = current.next
 
         return total
+
+ll = Linkedlist()
+ll.creat_linked_list()
+result = ll.calculate_sum()
+print(result)
