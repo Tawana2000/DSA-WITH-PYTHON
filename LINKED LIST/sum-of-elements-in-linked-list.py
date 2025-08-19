@@ -5,6 +5,7 @@ class Node:
 
         self.data = data
         self.next = None
+        
 class Linkedlist:
     def __init__(self):
         self.head = None
@@ -20,3 +21,14 @@ class Linkedlist:
         node1.next = node2
         node2.next = node3
         node3.next = node4
+        
+    def calculate_sum(self):
+
+        total = 0
+        current = self.head
+
+        while current is not None:
+            total += current.data
+            current = current.next
+
+        return total
