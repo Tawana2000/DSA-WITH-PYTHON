@@ -31,3 +31,7 @@ class Linkedlist:
             current = current.next
 
         return count
+
+ll = Linkedlist()
+ll.create_linked_list()
+print("Number of nodes: ", ll.count_elements())
