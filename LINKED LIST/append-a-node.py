@@ -24,3 +24,10 @@ class Linklist:
         node2.next = node3
         node3.next = node4
         node4.next = node5
+        
+    def display(self):
+        current = self.head
+        while current:
+            print(f"{current.data}", end="->")
+            current = current.next
+        print(None)
