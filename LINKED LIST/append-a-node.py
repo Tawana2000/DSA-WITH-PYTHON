@@ -10,3 +10,17 @@ class Linklist:
     
     def __init__(self):
         self.head = None
+        
+    def create_linked_list(self):
+
+        node1 = Node(16)
+        node2 = Node(8)
+        node3 = Node(23)
+        node4 = Node(30)
+        node5 = Node(4)
+
+        self.head = node1
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
