@@ -31,3 +31,9 @@ class Linklist:
             print(f"{current.data}", end="->")
             current = current.next
         print(None)
+        
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
