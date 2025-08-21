@@ -43,3 +43,10 @@ class Linklist:
             current = current.next
 
         current.next = new_node
+
+ll = Linklist()
+ll.create_linked_list()
+
+data = int(input())
+ll.append(data)
+ll.display()
