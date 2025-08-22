@@ -49,3 +49,8 @@ position = int(input("Enter the position where you want to insert the node: "))
 data = int(input("Enter the new node data: "))
 ll.insert_node_at_position(data, position)
 ll.display() 
+
+# This code will not be able to handle:
+# 1. The empty linked list
+# 2. The negative position
+
