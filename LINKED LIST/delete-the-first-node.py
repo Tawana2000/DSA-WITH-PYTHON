@@ -27,7 +27,6 @@ class Linkedlist:
         while current:
             print(f"{current.data}", end="->")
             current = current.next
-
         print(None)
 
     def delete_first_node(self):
