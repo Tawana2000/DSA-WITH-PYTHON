@@ -32,3 +32,11 @@ class Linkedlist:
     def delete_first_node(self):
         if self.head:
             self.head = self.head.next
+
+ll = Linkedlist()
+ll.create_linked_list()
+print("Original List")
+ll.display()
+ll.delete_first_node()
+print("After deleting the first node")
+ll.display()
