@@ -35,5 +35,4 @@ class Linkedlist:
 
 ll = Linkedlist()
 ll.creat_linked_list()
-result = ll.calculate_sum()
-print(result)
+print(ll.caculate_sum())
