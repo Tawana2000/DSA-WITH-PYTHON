@@ -35,4 +35,4 @@ class Linkedlist:
 
 ll = Linkedlist()
 ll.creat_linked_list()
-print(ll.caculate_sum())
+print(f"Sum of node data: {ll.caculate_sum()}")
