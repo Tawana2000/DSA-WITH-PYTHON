@@ -30,3 +30,12 @@ class Linkedlist:
             current = current.next
 
         print(None)
+        
+        def get_lenght(self):
+
+        current = self.head
+        count = 0
+        while current:
+            count += 1
+            current = current.next
+        return count
