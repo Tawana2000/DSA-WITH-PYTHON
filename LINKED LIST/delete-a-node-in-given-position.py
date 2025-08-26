@@ -64,3 +64,9 @@ class Linkedlist:
 
         if current.next:
             current.next = current.next.next
+
+ll = Linkedlist()
+ll.create_linked_list()
+position = int(input("Enter the position of the node you want to delete: "))
+ll.delete_node(position)
+ll.display()
