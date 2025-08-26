@@ -16,6 +16,7 @@ class Linkedlist:
         node2 = Node(25)
         node3 = Node(30)
         node4 = Node(6)
+        node5 = Node(17) 
 
         self.head = node1
         node1.next = node2
