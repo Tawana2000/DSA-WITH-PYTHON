@@ -39,3 +39,28 @@ class Linkedlist:
             count += 1
             current = current.next
         return count
+        
+    def delete_node(self, position):
+        if position <= 0 or position > self.get_lenght():
+            print("Invalid Position")
+            return 
+        
+        #If list is empty
+        if not self.head:
+            return 
+        
+        # Condition to delete node at the first position
+        if position == 1:
+            self.head = self.head.next
+            return 
+        
+        current = self.head
+
+        for i in range(1, position - 1):
+            # To handle if position is greater than number of nodes
+            if not current.next:
+                return 
+            current = current.next
+
+        if current.next:
+            current.next = current.next.next
