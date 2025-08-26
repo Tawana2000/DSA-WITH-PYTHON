@@ -31,7 +31,7 @@ class Linkedlist:
 
         print(None)
         
-        def get_lenght(self):
+    def get_lenght(self):
 
         current = self.head
         count = 0
