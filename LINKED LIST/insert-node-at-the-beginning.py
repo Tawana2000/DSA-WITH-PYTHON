@@ -30,3 +30,10 @@ class Linkedlist:
             print(f"{current.data}", end="->")
             current = current.next
         print(None)
+
+
+ll = Linkedlist()
+ll.create_linked_list()
+data = int(input("Enter the new node data: "))
+ll.insert_node_at_beginning(data)
+ll.display()
