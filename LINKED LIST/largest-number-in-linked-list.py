@@ -22,3 +22,19 @@ class Linkedlist:
         node2.next = node3
         node3.next = node4
         node4.next = node5
+        
+    def find_largest(self):
+        
+        #If list is empty
+        if not self.head:
+            return None
+        
+        current = self.head
+        largest = current.data
+
+        while current:
+            if current.data > largest:
+                largest = current.data
+            current = current.next
+
+        return largest
