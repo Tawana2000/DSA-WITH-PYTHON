@@ -38,3 +38,13 @@ class Linkedlist:
             current = current.next
 
         return largest
+
+
+ll = Linkedlist()
+ll.create_linked_list()
+print(f"The largest number in the linked list is: {ll.find_largest()}")
+
+
+"""
+In this program I assumed the first node is the largest, then traversed through each node and compared each node's value as I went through
+"""
