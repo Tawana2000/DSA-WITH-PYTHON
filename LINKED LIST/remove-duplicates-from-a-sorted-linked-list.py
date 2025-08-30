@@ -48,3 +48,12 @@ class Linkedlist:
                 current.next = current.next.next
             else:
                 current = current.next
+
+
+ll = Linkedlist()
+ll.create_linked_list()
+print("Original List:")
+ll.display()
+print("After removing duplicates: ")
+ll.remove_duplicates()
+ll.display()
