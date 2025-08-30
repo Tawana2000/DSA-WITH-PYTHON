@@ -27,3 +27,11 @@ class Linkedlist:
         node4.next = node5
         node5.next = node6
         node6.next = node7
+        
+    def display(self):
+        current = self.head
+        while current:
+            print(f"{current.data}", end="->")
+            current = current.next
+
+        print(None)
