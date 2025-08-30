@@ -35,3 +35,16 @@ class Linkedlist:
             current = current.next
 
         print(None)
+        
+    def remove_duplicates(self):
+        #If list is empty
+        if not self.head:
+            return 
+        
+        current = self.head
+
+        while current.next:
+            if current.data == current.next.data:
+                current.next = current.next.next
+            else:
+                current = current.next
