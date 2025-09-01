@@ -22,3 +22,10 @@ class Linkedlist:
         node1.next = node2
         node2.next = node3
         node3.next = node4
+        def display(self):
+
+        current = self.head
+        while current:
+            print(f"{current.data}", end="->")
+            current = current.next
+        print(None)
