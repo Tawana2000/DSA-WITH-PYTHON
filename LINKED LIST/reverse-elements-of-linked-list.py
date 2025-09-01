@@ -44,3 +44,16 @@ class Linkedlist:
         for value in reversed(values):
             current.data = value
             current = current.next
+
+
+ll = Linkedlist()
+ll.create_linked_list()
+print("Original Linked List: ")
+ll.display()
+print("Reversed Linked List: ")
+ll.reverse_elements()
+ll.display()
+
+"""
+In this code I copied the values of the list into a new list, then iterated through the new list in reverse order and lastly I assigned the reversed values to the nodes of the linked list.
+"""
