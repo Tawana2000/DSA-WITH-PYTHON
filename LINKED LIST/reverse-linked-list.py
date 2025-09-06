@@ -26,3 +26,7 @@ class LinkedList:
     new_node = Node(data)
     new_node.next = self.head
     self.head = new_node
+    
+  def insert_node_at_position(self, data, position):
+      new_node = Node(data)
+      current = self.head
