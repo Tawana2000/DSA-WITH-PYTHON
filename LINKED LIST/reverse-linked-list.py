@@ -24,5 +24,5 @@ class LinkedList:
   #Insert a node at the beginning
   def insert_node_at_beginning(self, data):
     new_node = Node(data)
-      new_node.next = self.head
-      self.head = new_node
+    new_node.next = self.head
+    self.head = new_node
