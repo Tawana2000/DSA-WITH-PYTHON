@@ -26,7 +26,14 @@ class LinkedList:
     new_node = Node(data)
     new_node.next = self.head
     self.head = new_node
-    
+
+  #Insert a node at a specific position
   def insert_node_at_position(self, data, position):
-      new_node = Node(data)
-      current = self.head
+    new_node = Node(data)
+    current = self.head
+    
+    for i in range(1, position - 1):
+            current = current.next
+
+    new_node.next = current.next
+    current.next = new_node
