@@ -37,3 +37,12 @@ class LinkedList:
 
     new_node.next = current.next
     current.next = new_node
+    
+  def insert_node(self, data, position = None):
+      #If no position is given , or position exceeds the lenght of the list, insert at the end
+      if position is None or position >= self.get_lenght():
+          self.append_node(data)
+      elif position == 0:
+          self.insert_node_at_beginning(data)
+      else:
+          self.insert_node_at_position(data, position)
