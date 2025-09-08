@@ -47,3 +47,12 @@ class LinkedList:
           self.insert_node_at_beginning(data)
       else:
           self.insert_node_at_position(data, position)
+
+    #Helper method to get the lenght of the linked list
+    def get_lenght(self):
+        current = self.head
+        lenght = 0
+        while current:
+            lenght += 1
+            current = current.next
+        return lenght
