@@ -37,7 +37,8 @@ class LinkedList:
 
     new_node.next = current.next
     current.next = new_node
-    
+
+  #Universal insertion method
   def insert_node(self, data, position = None):
       #If no position is given , or position exceeds the lenght of the list, insert at the end
       if position is None or position >= self.get_lenght():
