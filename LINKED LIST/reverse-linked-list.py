@@ -84,3 +84,6 @@ class LinkedList:
         
         self.head = current
        
+input_elements = input()
+input_list = input_elements.split()
+ll = LinkedList()
