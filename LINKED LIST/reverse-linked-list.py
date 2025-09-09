@@ -56,5 +56,12 @@ class LinkedList:
             lenght += 1
             current = current.next
         return lenght
-            
+      
+    #Traverse the list
+    def display(self):
+        current = self.head
+        while current:
+            print(f"{current.data}", end="->")
+            current = current.next
+        print(None)
        
