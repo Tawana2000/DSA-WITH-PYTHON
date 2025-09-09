@@ -55,4 +55,4 @@ class LinkedList:
         while current:
             lenght += 1
             current = current.next
-        return lenght
+       
