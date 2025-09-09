@@ -87,3 +87,8 @@ class LinkedList:
 input_elements = input()
 input_list = input_elements.split()
 ll = LinkedList()
+
+for element in input_list:
+    ll.insert_node(int(element))
+ll.reverse_linked_list()
+ll.display()
