@@ -53,6 +53,6 @@ class LinkedList:
         current = self.head
         lenght = 0
         while current:
-            lenght += 1
+            
             
        
