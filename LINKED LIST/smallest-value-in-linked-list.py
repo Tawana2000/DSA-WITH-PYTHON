@@ -37,3 +37,14 @@ class Linkedlist:
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
+        
+    #Universal insert method
+    def insert_node(self, data, position = None):
+
+        if position is None or position >= self.get_length():
+            self.append_node(data)
+
+        elif position == 0:
+            self.insert_node_at_the_beginning(data)
+        else:
+            self.insert_node_at_position(data, position)
