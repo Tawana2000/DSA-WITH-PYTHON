@@ -81,5 +81,11 @@ class Linkedlist:
 
 
 ll = Linkedlist()
+
+ll.insert_node(90)
+ll.insert_node(30)
+ll.insert_node(63)
+ll.insert_node(71)
+
 ll.create_linked_list()
 ll.display()
