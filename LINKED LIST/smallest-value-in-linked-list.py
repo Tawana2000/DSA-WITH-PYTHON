@@ -89,3 +89,5 @@ ll.insert_node(71)
 
 ll.create_linked_list()
 ll.display()
+
+print(ll.find_smalles())
