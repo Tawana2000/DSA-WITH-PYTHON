@@ -65,6 +65,19 @@ class Linkedlist:
             print(f"{current.data}", end="->")
             current = current.next
         print(None)
+        
+    #Return the smalles number 
+    def find_smalles(self):
+
+        if not self.head:
+            return None
+        current = self.head
+        smallest = current.data
+        while current is not None:
+            if current.data < smallest:
+                smallest = current.data
+            current = current.next
+        return smallest
 
 
 ll = Linkedlist()
