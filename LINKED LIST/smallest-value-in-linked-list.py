@@ -57,3 +57,8 @@ class Linkedlist:
             lenght += 1
             current = current.next
         return lenght
+
+
+ll = Linkedlist()
+ll.create_linked_list()
+ll.display()
