@@ -26,3 +26,22 @@ class Linkedlist:
             print(f"{current.data}", end="->")
             current = current.next
         print(None)
+        
+    #Return the smalles number 
+    def find_middle_element(self):
+
+        if not self.head:
+            return None
+        
+        fast = self.head
+        slow = self.head
+
+        #Traverse the linked list
+        while fast is not None and fast.next is not None:
+            #Move fast two steps ahead
+            fast = fast.next.next
+
+            #Move slow one step ahead
+            slow = slow.next
+
+        return slow.data
