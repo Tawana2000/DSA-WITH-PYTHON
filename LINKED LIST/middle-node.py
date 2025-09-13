@@ -49,3 +49,9 @@ class Linkedlist:
 ll = Linkedlist()
 
 data_list = list(map(int, input("Enter the list Elements: ").split()))
+
+for node in data_list:
+    ll.insert_node(node)
+
+middle = ll.find_middle_element()
+print(middle)
