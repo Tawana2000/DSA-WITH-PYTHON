@@ -18,3 +18,11 @@ class Linkedlist:
 
         node3 = Node(50)
         node2.next = node3
+        
+    #Traverse the list
+    def display(self):
+        current = self.head
+        while current:
+            print(f"{current.data}", end="->")
+            current = current.next
+        print(None)
