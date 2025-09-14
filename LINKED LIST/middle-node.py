@@ -58,6 +58,15 @@ class Linkedlist:
             self.insert_node_at_the_beginning(data)
         else:
             self.insert_node_at_position(data, position)
+            
+    #Get the lenght of linked list
+    def get_length(self):
+        current = self.head
+        lenght = 0
+        while current:
+            lenght += 1
+            current = current.next
+        return lenght
         
     #Traverse the list
     def display(self):
