@@ -31,6 +31,12 @@ class Linkedlist:
             current = current.next
         current.next = new_node
         
+    #Insert a node at the beginning 
+    def insert_node_at_the_beginning(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+        
     #Traverse the list
     def display(self):
         current = self.head
