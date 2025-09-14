@@ -19,6 +19,18 @@ class Linkedlist:
         node3 = Node(50)
         node2.next = node3
         
+    #Append a node at the end
+    def append_node(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return 
+        current = self.head
+
+        while current.next:
+            current = current.next
+        current.next = new_node
+        
     #Traverse the list
     def display(self):
         current = self.head
