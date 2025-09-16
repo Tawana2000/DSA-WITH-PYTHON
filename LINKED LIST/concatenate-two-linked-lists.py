@@ -15,3 +15,12 @@ class LinkedList:
             print(current.data, end="->")
             current = current.next
     print("None")
+    
+    def concatenate(self, second_list):
+        if self.head is None:
+            self.head = second_list.head
+            return 
+        current = self.head
+        while current.next:
+            current = current.next
+        current.next = second_list.head
