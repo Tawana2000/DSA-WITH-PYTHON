@@ -16,6 +16,12 @@ class LinkedList:
             current = current.next
     print("None")
     
+    def append(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+            
     def concatenate(self, second_list):
         if self.head is None:
             self.head = second_list.head
