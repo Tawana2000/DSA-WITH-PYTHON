@@ -34,3 +34,14 @@ class LinkedList:
         while current.next:
             current = current.next
         current.next = second_list.head
+
+
+list1 = LinkedList()
+list1.append(10)
+list1.append(12)
+list1.append(14)
+
+list2 = LinkedList()
+list2.append(20)
+list2.append(22)
+list2.append(24)
