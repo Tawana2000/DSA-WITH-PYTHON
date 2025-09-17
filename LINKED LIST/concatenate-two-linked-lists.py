@@ -21,6 +21,10 @@ class LinkedList:
         if self.head is None:
             self.head = new_node
             return
+        current = self.head
+        while current.next:
+            current = current.next
+        current.next = new_node
             
     def concatenate(self, second_list):
         if self.head is None:
