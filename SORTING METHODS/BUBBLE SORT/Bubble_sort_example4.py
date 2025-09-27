@@ -9,10 +9,12 @@ class Bubble_Sort:
         count = 0
 
         for i in range(size):
+            swapped = False
             for j in range(size - 1 - i):
                 count += 1
                 if lst[j] > lst[j + 1]:
                     lst[j], lst[j + 1] = lst[j + 1], lst[j]
+                    swapped = True
 
         return lst, count
     
