@@ -6,9 +6,10 @@ class Bubble_Sort:
     def bubble_sort(self, lst):
         self.lst = lst
         size = len(lst)
+        count = 0
 
         for i in range(size):
-
+            count += 1
             for j in range(size - 1 - i):
                 if lst[j] > lst[j + 1]:
                     lst[j], lst[j + 1] = lst[j + 1], lst[j]
