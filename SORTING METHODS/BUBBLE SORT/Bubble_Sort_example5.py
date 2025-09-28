@@ -13,6 +13,9 @@ class Bubble_Sort:
                 if lst[j] > lst[j + 1]:
                     lst[j], lst[j + 1] = lst[j + 1], lst[j]
                     swapped = True
+                    
+            if not swapped:
+                break
         return lst
     
 BBS = Bubble_Sort()
