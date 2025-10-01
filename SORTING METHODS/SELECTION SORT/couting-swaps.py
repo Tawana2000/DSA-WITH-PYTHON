@@ -2,7 +2,7 @@
 
 def count_swaps(lst):
 
-    swaps = 1
+    swaps = 0
 
     for i in range(len(lst)):
         min = i
