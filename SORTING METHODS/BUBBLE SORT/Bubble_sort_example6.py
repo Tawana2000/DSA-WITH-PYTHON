@@ -9,6 +9,8 @@ class BubbleSort:
 
         self.scores = scores
         size = len(scores)
+        comparisons = 0
+        swaps = 0
 
         for i in range(size):
             for j in range(size - 1 - i):
