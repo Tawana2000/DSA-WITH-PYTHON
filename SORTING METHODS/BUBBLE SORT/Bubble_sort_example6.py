@@ -13,11 +13,18 @@ class BubbleSort:
         swaps = 0
 
         for i in range(size):
+            swapped = False
             for j in range(size - 1 - i):
+                comparisons += 1
                 if scores[j] > scores[j + 1]:
                     scores[j], scores[j + 1] = scores[j + 1], scores[j]
+                    swapped = True
+                    swaps += 1
 
-        return scores
+            if not swapped:
+                break
+
+        return scores, comparisons, swaps
     
 BBS = BubbleSort()
 print(BBS.math_scores([72, 88, 95, 43, 67, 81, 59, 100, 76]))
