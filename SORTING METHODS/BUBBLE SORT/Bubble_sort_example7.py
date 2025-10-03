@@ -39,6 +39,17 @@ class BubbleSort:
                 break
 
         return students, comparisons, swaps
+students = [
+    ["Alice", 72],
+    ["Bob", 88],
+    ["Charlie", 95],
+    ["David", 43],
+    ["Eva", 67],
+    ["Frank", 81],
+    ["Grace", 59],
+    ["Helen", 100],
+    ["Ian", 76]
+]
 
 BBS = BubbleSort()
 print(BBS.scores_list(students))
