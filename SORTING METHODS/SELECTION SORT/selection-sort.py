@@ -8,7 +8,7 @@ def selection_sort(lst):
         min_max = i
 
         for j in range(i + 1, len(lst)):
-            if lst[j] < lst[min_max]:   #sorting in ascending order
+            if lst[j] < lst[min_max]:   #sorting in ascending order, #To make it descending we just change the greater sign's direction
                 min_max = j
 
         lst[i], lst[min_max] = lst[min_max], lst[i]
