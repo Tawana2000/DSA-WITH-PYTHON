@@ -28,7 +28,7 @@ data_list = [15,27,6,1,2]
 print(f"Unsorted list: {data_list}")
 
 sorted_lsit = bubble_sort(data_list)
-print(f"Sorted list: {sorted_lsit}") 
+print(f"Sorted list: {sorted_lsit}")
 
 
 # In this example, we compare all consecutive elements during each loop iteration, Hence we can further optimize this bubble sort. 
