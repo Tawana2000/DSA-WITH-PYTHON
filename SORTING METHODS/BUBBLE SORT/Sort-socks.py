@@ -10,3 +10,25 @@ sock_sizes = [10, 6, 8, 7, 9, 6, 11]
 Use Bubble Sort to sort the sock sizes in ascending order.
 
 """
+
+class BubbleSort:
+
+    def socks_pile(self, sock_sizes):
+        self.sock_sizes = sock_sizes
+
+        size = len(sock_sizes)
+
+        for i in range(size):
+            swapped = True
+            
+            for j in range(size - 1 - i):
+                if sock_sizes[j] > sock_sizes[j + 1]:
+                    sock_sizes[j], sock_sizes[j + 1] = sock_sizes[j + 1], sock_sizes[j]
+                    swapped = True
+            
+            if not swapped:
+                break
+        return sock_sizes
+
+BB = BubbleSort()
+print(BB.socks_pile([10, 6, 8, 7, 9, 6, 11]))
