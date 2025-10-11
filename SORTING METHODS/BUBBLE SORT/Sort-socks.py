@@ -19,7 +19,7 @@ class BubbleSort:
         size = len(sock_sizes)
 
         for i in range(size):
-            swapped = True
+            swapped = False
             
             for j in range(size - 1 - i):
                 if sock_sizes[j] > sock_sizes[j + 1]:
