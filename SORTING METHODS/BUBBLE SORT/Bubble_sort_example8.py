@@ -19,3 +19,17 @@ def bubble_sort_products(products):
             break
 
     return products
+
+
+products = [
+    ("Laptop", 1200),
+    ("Phone", 800),
+    ("Tablet", 600),
+    ("Monitor", 300),
+    ("Mouse", 50)
+]
+
+print("\n Sorted Products:")
+sorted_products = bubble_sort_products(products)
+for name, price in sorted_products:
+    print(f"{name} - ${price}")
