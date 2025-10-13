@@ -13,6 +13,7 @@ def bubble_sort_products(products):
                 products[j], products[j + 1] = products[j + 1], products[j]
                 swapped = True
                 
+            print(f"  Step {j + 1}: {products}")
             
         if not swapped:
             break
