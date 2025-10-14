@@ -16,7 +16,6 @@ def bubble_sort_employee(employees):
             if employees[j][1] > employees[j + 1][1]:
                 employees[j], employees[j + 1] = employees[j + 1], employees[j]
                 swapped = True
-                swaps += 1
 
         if not swapped:
             break
