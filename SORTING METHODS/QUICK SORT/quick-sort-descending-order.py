@@ -17,7 +17,7 @@ def quick_sort(lst):
 
         else:
             left.append(elements)
-
+            
     return quick_sort(right) + [pivot] + quick_sort(left)
 
 data_list = list(map(int, input("Enter the list elements: ").split()))
