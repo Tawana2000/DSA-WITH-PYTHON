@@ -22,3 +22,19 @@ def bubble_sort_employee(employees):
             break
 
     return employees, swaps
+
+employees = [
+    ("Alice", 5200),
+    ("Bob", 4800),
+    ("Charlie", 6000),
+    ("David", 4500),
+    ("Eve", 5200)
+]
+
+sorted_employees, swap_count = bubble_sort_employee(employees)
+
+print("Sorted Employees by Salary (Descending): ")
+for name, salary in sorted_employees:
+    print(f"{name} - ${salary}")
+
+print(f"\nTotal number of swaps: {swap_count}")
