@@ -17,7 +17,7 @@ class Bubble_Sort:
 
             if not swapped:
                 break
-        return lst
+        return lst, count
     
 BBS = Bubble_Sort()
 print(BBS.bubble_sort([4, 3, 1, 7, 3, 2]))
