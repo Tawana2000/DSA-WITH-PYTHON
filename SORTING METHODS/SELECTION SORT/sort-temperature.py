@@ -13,7 +13,7 @@ def sort_temp(temps):
 
         temps[i], temps[min_max_temp] = temps[min_max_temp], temps[i]
 
-    return temps, temps[0], temps[-2]
+    return temps, temps[-2], temps[0]
 
 temps = [23, 19, 25, 22, 18, 24, 20]
 print(sort_temp(temps))
