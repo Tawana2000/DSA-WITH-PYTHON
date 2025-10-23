@@ -17,6 +17,10 @@ class Selection_Sort:
 
             lst[i], lst[min_max] = lst[min_max], lst[i]
 
+        print("Sorted Times (fastest to slowest): ", lst)
+        print("Top 3 fastest runners:", lst[:3])
+        print("Slowest runner's time: ", lst[-1])
+
         return lst
     
 lst = [52, 47, 59, 45, 50, 49, 55, 48]
