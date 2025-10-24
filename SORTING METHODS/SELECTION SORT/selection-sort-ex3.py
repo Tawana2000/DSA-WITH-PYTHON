@@ -31,7 +31,7 @@ class Selection_Sort:
         print("\nCheapest product:", products[0][0], "-", products[0][1])
         print("\nMost expensive product:", products[-1][0], "-", products[-1][1])
 
-        return products
+        return products, products[0], products[-1]
 
 products = [
     ["Keyboard", 49],
