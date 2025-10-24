@@ -28,6 +28,9 @@ class Selection_Sort:
         for name, price in products:
             print(f"{name}: ${price}")
 
+        print("\nCheapest product:", products[0][0], "-", products[0][1])
+        print("\nMost expensive product:", products[-1][0], "-", products[-1][1])
+
         return products
 
 products = [
