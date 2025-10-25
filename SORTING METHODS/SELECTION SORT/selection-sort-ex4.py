@@ -9,3 +9,4 @@ data = [
     ["Zara", 60]
 ]
 """
+#Write a python program that: 1.Sorts the list first by score (descending), highest marks first, 2.If two students have the same score, sort them alphabetically by name, 3.Prints the full sorted list with both name and score clearly
