@@ -33,9 +33,18 @@ class Selection_Sort:
                     min_max = j
 
             employees[i], employees[min_max] = employees[min_max], employees[i]
+            
+        print("Sorted Employees (by salary): ")
+        for name, department, salary in employees:
+            print(f"{name} | {department} | ${salary}")
         
+        print("\nTop 3 Highest Earners: ")
+        for name, department, salary in employees[:3]:
+            print(f"{name} | {department} | {salary}")
 
-    
+        avg_salary = sum(emp[2] for emp in employees) / len(employees)
+        print(f"\nAverage Salary: ${avg_salary:.2f}")
+        return employees
 
 employees = [
     ["Alice", "Engineering", 7200],
