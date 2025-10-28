@@ -38,4 +38,4 @@ gpa = [
 ]
 
 SS = Selection_Sort()
-print(SS.student_gpa(gpa))
+SS.student_gpa(gpa)
