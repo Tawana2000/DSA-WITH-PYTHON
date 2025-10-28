@@ -24,7 +24,9 @@ class Selection_Sort:
                     min_max_gpa = j
 
             gpa[i], gpa[min_max_gpa] = gpa[min_max_gpa], gpa[i]
-        
+            
+        for name, subject, score in gpa:
+            print(f"{name} | {subject} | {score}")
         return gpa
     
 gpa = [
