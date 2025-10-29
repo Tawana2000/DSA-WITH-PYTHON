@@ -12,7 +12,7 @@ class Selection_Sort:
             for j in range(i + 1, len(books)):
                 if books[j][3] > books[rating_score][3]:
                     rating_score = j
-                elif books[j][3] == books[rating_score][3] and books[j][0] < books[rating_score][0]:
+                elif books[j][3] == books[rating_score][3] and books[j][0] > books[rating_score][0]:
                     rating_score = j
 
             books[i], books[rating_score] = books[rating_score], books[i]
