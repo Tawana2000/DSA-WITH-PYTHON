@@ -27,11 +27,11 @@ class Selection_Sort:
             for j in range(i + 1, len(patients)):
                 if patients[j][2] > patients[low_high_urgency][2]:
                     low_high_urgency = j
-                elif patients[j][2] == patients[low_high_urgency][2] and patients[j][1] < patients[low_high_urgency][1]:
+                elif patients[j][2] == patients[low_high_urgency][2] and patients[j][1] > patients[low_high_urgency][1]:
                     low_high_urgency = j
-                elif patients[j][2] == patients[low_high_urgency][2] and patients[j][1] == patients[low_high_urgency][1] and patients[j][4] > patients[low_high_urgency][4]:
+                elif patients[j][2] == patients[low_high_urgency][2] and patients[j][1] == patients[low_high_urgency][1] and patients[j][4] < patients[low_high_urgency][4]:
                     low_high_urgency = j
-                elif patients[j][2] == patients[low_high_urgency][2] and patients[j][1] == patients[low_high_urgency][1] and patients[j][4] == patients[low_high_urgency][4] and patients[j][3] > patients[low_high_urgency][3]:
+                elif patients[j][2] == patients[low_high_urgency][2] and patients[j][1] == patients[low_high_urgency][1] and patients[j][4] == patients[low_high_urgency][4] and patients[j][3] < patients[low_high_urgency][3]:
                     low_high_urgency = j
 
             patients[i], patients[low_high_urgency] = patients[low_high_urgency], patients[i]
