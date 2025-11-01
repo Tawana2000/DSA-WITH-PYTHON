@@ -49,6 +49,7 @@ patients = [
     ["David", 55, 4, "Cardiology", 930],
     ["Lily", 60, 4, "Cardiology", 925],
     ["Noah", 72, 5, "Cardiology", 915],
+    ["Chris", 25, 3, "General", 870],
     ["Ava", 72, 5, "Cardiology", 900]
 ]
 
