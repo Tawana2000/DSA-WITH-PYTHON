@@ -8,6 +8,7 @@
 class Selection_Sort:
 
   def sort_array(self, array):
+    count = 0
 
     for i in range(len(array)):
       min_max = i
@@ -15,7 +16,7 @@ class Selection_Sort:
         if array[j] > array[min_max]:
           min_max = j
       array[i], array[min_max] = array[min_max], array[i]
-  return array
+  return array, count
 
 SS = Selection_Sort()
 print(SS.sort_array([5, 2, 9, 1, 5, 6]))
