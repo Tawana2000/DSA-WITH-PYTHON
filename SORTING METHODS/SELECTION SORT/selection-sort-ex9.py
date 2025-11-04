@@ -19,19 +19,30 @@ class Selection_Sort:
 
     def job_application_ranking(self, applicants):
 
+        degree_rank = {"PhD": 4, "Master's": 3, "Bachelor's": 2, "Associate": 1}
+
         for i in range(len(applicants)):
             rank = i
 
             for j in range(i + 1, len(applicants)):
-                if applicants[j][1] > applicants[rank][1]:
+                if degree_rank[applicants[j][1]] > degree_rank[applicants[rank][1]]:
                     rank = j
-                elif applicants[j][1] == applicants[rank][1] and applicants[j][2] > applicants[rank][2]:
+                elif degree_rank[applicants[j][1]] == degree_rank[applicants[rank][1]] and applicants[j][2] > applicants[rank][2]:
                     rank = j
-                elif applicants[j][1] == applicants[rank][1] and applicants[j][2] == applicants[rank][2] and applicants[j][3] > applicants[rank][3]:
+                elif (degree_rank[applicants[j][1]] == degree_rank[applicants[rank][1]] and 
+                      applicants[j][2] == applicants[rank][2] and 
+                      applicants[j][3] > applicants[rank][3]):
                     rank = j
-                elif applicants[j][1] == applicants[rank][1] and applicants[j][2] == applicants[rank][2] and applicants[j][3] == applicants[rank][3] and applicants[j][4] > applicants[rank][4]:
+                elif (degree_rank[applicants[j][1]] == degree_rank[applicants[rank][1]] and 
+                      applicants[j][2] == applicants[rank][2] and 
+                      applicants[j][3] == applicants[rank][3] and 
+                      applicants[j][4] > applicants[rank][4]):
                     rank = j
-                elif applicants[j][1] == applicants[rank][1] and applicants[j][2] == applicants[rank][2] and applicants[j][3] == applicants[rank][3] and applicants[j][4] == applicants[rank][4] and applicants[j][5] < applicants[rank][5]:
+                elif (degree_rank[applicants[j][1]] == degree_rank[applicants[rank][1]] and 
+                      applicants[j][2] == applicants[rank][2] and 
+                      applicants[j][3] == applicants[rank][3] and 
+                      applicants[j][4] == applicants[rank][4] and 
+                      applicants[j][5] < applicants[rank][5]):
                     rank = j
 
             applicants[i], applicants[rank] = applicants[rank], applicants[i]
