@@ -13,3 +13,31 @@ Sorting Rules (From highest to lowest)
 5. Application Time (earlier first)
 6. If everything else is the same -> Sort alphabetically by name (A -> Z)
 """
+
+
+class Selection_Sort:
+
+    def job_application_ranking(self, applicants):
+
+        for i in range(len(applicants)):
+            rank = i
+
+            for j in range(i + 1, len(applicants)):
+                if applicants[j][1] > applicants[rank][1]:
+                    rank = j
+                elif applicants[j][1] == applicants[range][1] and applicants[j][2] > applicants[rank][2]:
+                    rank = j
+
+applicants = [
+    ["Alice", "Master's", 5, 88, 92, 915],
+    ["Bob", "Bachelor's", 6, 90, 88, 930],
+    ["Charlie", "PhD", 3, 85, 95, 905],
+    ["Diana", "PhD", 4, 85, 95, 910],
+    ["Ethan", "Bachelor's", 6, 90, 88, 920],
+    ["Fatima", "Master's", 5, 88, 92, 910],
+    ["George", "Associate", 8, 80, 85, 900],
+    ["Hannah", "PhD", 3, 85, 95, 900]
+]
+
+SS = Selection_Sort()
+SS.job_application_ranking(applicants)
