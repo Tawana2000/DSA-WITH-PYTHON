@@ -11,4 +11,5 @@ Sorting Rules (From highest to lowest)
 3. Test Score (higher first)
 4. Interview Score (higher first)
 5. Application Time (earlier first)
+6. If everything else is the same -> Sort alphabetically by name (A -> Z)
 """
