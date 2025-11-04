@@ -25,8 +25,23 @@ class Selection_Sort:
             for j in range(i + 1, len(applicants)):
                 if applicants[j][1] > applicants[rank][1]:
                     rank = j
-                elif applicants[j][1] == applicants[range][1] and applicants[j][2] > applicants[rank][2]:
+                elif applicants[j][1] == applicants[rank][1] and applicants[j][2] > applicants[rank][2]:
                     rank = j
+                elif applicants[j][1] == applicants[rank][1] and applicants[j][2] == applicants[rank][2] and applicants[j][3] > applicants[rank][3]:
+                    rank = j
+                elif applicants[j][1] == applicants[rank][1] and applicants[j][2] == applicants[rank][2] and applicants[j][3] == applicants[rank][3] and applicants[j][4] > applicants[rank][4]:
+                    rank = j
+                elif applicants[j][1] == applicants[rank][1] and applicants[j][2] == applicants[rank][2] and applicants[j][3] == applicants[rank][3] and applicants[j][4] == applicants[rank][4] and applicants[j][5] < applicants[rank][5]:
+                    rank = j
+
+            applicants[i], applicants[rank] = applicants[rank], applicants[i]
+
+        for name, degree, exp, test, interview, date_applied in applicants:
+            formatted_time = f"{date_applied//100:02}:{date_applied%100:02}"  
+            print(f"Name: {name} | Degree: {degree} | Exp: {exp} | Test: {test} | Interview: {interview} | Applied: {formatted_time}")
+
+        return applicants
+
 
 applicants = [
     ["Alice", "Master's", 5, 88, 92, 915],
