@@ -14,3 +14,7 @@ Sorting Rules (From highest to lowest)
 5. Application Time (earlier first)
 6. If everything else is the same -> Sort alphabetically by name (A -> Z)
 """
+
+class Selection_Sort:
+
+       def job_applicantion_ranking(self, applicants):
