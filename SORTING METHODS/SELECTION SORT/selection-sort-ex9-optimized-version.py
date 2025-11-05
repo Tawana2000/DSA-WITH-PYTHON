@@ -18,3 +18,8 @@ Sorting Rules (From highest to lowest)
 class Selection_Sort:
 
        def job_applicantion_ranking(self, applicants):
+              degree_rank{"PHD: 5", 
+                         "Master's: 4", 
+                         "Bachelor's: 3",
+                         "Associate: 2", 
+                         "High School: 1"}
