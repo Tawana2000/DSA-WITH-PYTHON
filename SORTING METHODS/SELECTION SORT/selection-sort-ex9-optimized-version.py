@@ -23,3 +23,7 @@ class Selection_Sort:
                          "Bachelor's: 3",
                          "Associate: 2", 
                          "High School: 1"}
+              
+              def is_better(a, b):
+                     if degree_rank[a[1]] != degree_rank[b[1]]:
+                            return degree_rank[a[1]] > degree_rank[b[1]]
