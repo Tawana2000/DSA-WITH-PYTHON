@@ -33,3 +33,9 @@ class Selection_Sort:
                      
                      if a[3] != b[3]:
                             return a[3] > b[3]
+                            
+                     if a[4] != b[4]:
+                            return a[4] > b[4]
+                            
+                     if a[5] != b[5]:
+                            return a[5] > b[5]
