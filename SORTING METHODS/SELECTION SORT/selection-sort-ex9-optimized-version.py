@@ -27,3 +27,9 @@ class Selection_Sort:
               def is_better(a, b):
                      if degree_rank[a[1]] != degree_rank[b[1]]:
                             return degree_rank[a[1]] > degree_rank[b[1]]
+                            
+                     if a[2] != b[2]:
+                            return a[2] > b[2]
+                     
+                     if a[3] != b[3]:
+                            return a[3] > b[3]
