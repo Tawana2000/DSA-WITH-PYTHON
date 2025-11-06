@@ -39,3 +39,5 @@ class Selection_Sort:
                             
                      if a[5] != b[5]:
                             return a[5] > b[5]
+                            
+                     return a[0] < b[0]
