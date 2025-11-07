@@ -51,6 +51,10 @@ class Selection_Sort:
                             if best != i:
                                    applicants[i], applicants[best] = applicants[best], applicants[i]
               print("/nFinal Applicant Ranking")
+              for name, degree, exp, test, interview, time in applicants:
+                     formatted_time = f"{time // 100:02}:{time % 100:02}"
+                     print(f"Name: {name:<8} | Degree: {degree:<10} | Exp: {exp:<2} | "
+                          f"Test: {test:<3} | Interview: {interview;<3} | Applied: {formatted_time}")
               return applicants
 
 
