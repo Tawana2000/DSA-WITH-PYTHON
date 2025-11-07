@@ -18,44 +18,44 @@ Sorting Rules (From highest to lowest)
 class Selection_Sort:
 
        def job_application_ranking(self, applicants):
-              degree_rank = {"PHD: 5", 
-                         "Master's: 4", 
-                         "Bachelor's: 3",
-                         "Associate: 2", 
-                         "High School: 1"}
+            degree_rank = {"PHD: 5", 
+                        "Master's: 4", 
+                        "Bachelor's: 3",
+                        "Associate: 2", 
+                        "High School: 1"}
               
-              def is_better(a, b):
-                     if degree_rank[a[1]] != degree_rank[b[1]]:
-                            return degree_rank[a[1]] > degree_rank[b[1]]
+            def is_better(a, b):
+                if degree_rank[a[1]] != degree_rank[b[1]]:
+                    return degree_rank[a[1]] > degree_rank[b[1]]
                             
-                     if a[2] != b[2]:
-                            return a[2] > b[2]
+                if a[2] != b[2]:
+                    return a[2] > b[2]
                      
-                     if a[3] != b[3]:
-                            return a[3] > b[3]
+                if a[3] != b[3]:
+                    return a[3] > b[3]
                             
-                     if a[4] != b[4]:
-                            return a[4] > b[4]
+                if a[4] != b[4]:
+                    return a[4] > b[4]
                             
-                     if a[5] != b[5]:
-                            return a[5] > b[5]
+                if a[5] != b[5]:
+                    return a[5] > b[5]
                             
-                     return a[0] < b[0]
+                return a[0] < b[0]
                      
-              n = len(applicants)
-              for i in range(n - 1):
-                     best = i
-                     for j in range(i + 1, n):
-                            if is_better(applicants[j], applicants[best]):
-                                   best = j
-                            if best != i:
-                                   applicants[i], applicants[best] = applicants[best], applicants[i]
-              print("/nFinal Applicant Ranking")
-              for name, degree, exp, test, interview, time in applicants:
-                     formatted_time = f"{time // 100:02}:{time % 100:02}"
-                     print(f"Name: {name:<8} | Degree: {degree:<10} | Exp: {exp:<2} | "
-                          f"Test: {test:<3} | Interview: {interview:<3} | Applied: {formatted_time}")
-              return applicants
+            n = len(applicants)
+            for i in range(n - 1):
+                best = i
+                for j in range(i + 1, n):
+                    if is_better(applicants[j], applicants[best]):
+                        best = j
+                    if best != i:
+                        applicants[i], applicants[best] = applicants[best], applicants[i]
+            print("/nFinal Applicant Ranking")
+            for name, degree, exp, test, interview, time in applicants:
+                formatted_time = f"{time // 100:02}:{time % 100:02}"
+                print(f"Name: {name:<8} | Degree: {degree:<10} | Exp: {exp:<2} | "
+                    f"Test: {test:<3} | Interview: {interview:<3} | Applied: {formatted_time}")
+            return applicants
 
 
 applicants = [
