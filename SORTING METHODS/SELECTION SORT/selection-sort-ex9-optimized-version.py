@@ -18,7 +18,7 @@ Sorting Rules (From highest to lowest)
 class Selection_Sort:
 
        def job_application_ranking(self, applicants):
-              degree_rank{"PHD: 5", 
+              degree_rank = {"PHD: 5", 
                          "Master's: 4", 
                          "Bachelor's: 3",
                          "Associate: 2", 
@@ -54,7 +54,7 @@ class Selection_Sort:
               for name, degree, exp, test, interview, time in applicants:
                      formatted_time = f"{time // 100:02}:{time % 100:02}"
                      print(f"Name: {name:<8} | Degree: {degree:<10} | Exp: {exp:<2} | "
-                          f"Test: {test:<3} | Interview: {interview;<3} | Applied: {formatted_time}")
+                          f"Test: {test:<3} | Interview: {interview:<3} | Applied: {formatted_time}")
               return applicants
 
 
