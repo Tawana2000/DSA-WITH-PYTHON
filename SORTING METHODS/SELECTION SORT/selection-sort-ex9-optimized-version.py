@@ -18,11 +18,13 @@ Sorting Rules (From highest to lowest)
 class Selection_Sort:
 
        def job_application_ranking(self, applicants):
-            degree_rank = {"PHD: 5", 
-                        "Master's: 4", 
-                        "Bachelor's: 3",
-                        "Associate: 2", 
-                        "High School: 1"}
+            degree_rank = {
+            "PhD": 5,
+            "Master's": 4,
+            "Bachelor's": 3,
+            "Associate": 2,
+            "High School": 1
+        }
               
             def is_better(a, b):
                 if degree_rank[a[1]] != degree_rank[b[1]]:
