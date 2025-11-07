@@ -41,3 +41,13 @@ class Selection_Sort:
                             return a[5] > b[5]
                             
                      return a[0] < b[0]
+                     
+              n = len(applicants)
+              for i in range(n - 1):
+                     best = i
+                     for j in range(i + 1, n):
+                            if is_better(applicants[j], applicants[best]):
+                                   best = j
+                            if best != i:
+                                   applicants[i], applicants[best] = applicants[best], applicants[i]
+              return applicants
