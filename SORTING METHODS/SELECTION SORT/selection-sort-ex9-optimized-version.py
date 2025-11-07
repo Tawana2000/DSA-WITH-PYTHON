@@ -17,7 +17,7 @@ Sorting Rules (From highest to lowest)
 
 class Selection_Sort:
 
-       def job_applicantion_ranking(self, applicants):
+       def job_application_ranking(self, applicants):
               degree_rank{"PHD: 5", 
                          "Master's: 4", 
                          "Bachelor's: 3",
@@ -50,4 +50,22 @@ class Selection_Sort:
                                    best = j
                             if best != i:
                                    applicants[i], applicants[best] = applicants[best], applicants[i]
+              print("/nFinal Applicant Ranking")
               return applicants
+
+
+applicants = [
+    ["Alice", "Master's", 5, 88, 92, 915],
+    ["Bob", "Bachelor's", 6, 90, 88, 930],
+    ["Charlie", "PhD", 3, 85, 95, 905],
+    ["Diana", "PhD", 4, 85, 95, 910],
+    ["Ethan", "Bachelor's", 6, 90, 88, 920],
+    ["Fatima", "Master's", 5, 88, 92, 910],
+    ["George", "Associate", 8, 80, 85, 900],
+    ["Hannah", "PhD", 3, 85, 95, 900],
+    ["Ivy", "High School", 10, 70, 80, 830],
+    ["Zara", "PhD", 3, 85, 95, 900]  # test for alphabetical tiebreak
+]
+
+SS = Selection_Sort()
+SS.job_application_ranking(applicants)
