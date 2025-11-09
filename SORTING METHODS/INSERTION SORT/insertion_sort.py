@@ -23,6 +23,8 @@ def insertion_sort(lst):
         j = i - 1
 
         while j >= 0 and key < lst[j]:
+
+            #shifts the element at j one position to the right.
            lst[j + 1] = lst[j]
 
            j = j - 1
