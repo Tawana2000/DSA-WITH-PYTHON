@@ -15,7 +15,11 @@
 def insertion_sort(lst):
 
     for i in range(1, len(lst)):
+        
+        #stores the value of the current element we’re trying to insert into the correct position.
         key = lst[i]
+
+        #sets j to the index of the element before i
         j = i - 1
 
         while j >= 0 and key < lst[j]:
