@@ -26,7 +26,9 @@ def insertion_sort(lst):
 
             #shifts the element at j one position to the right.
            lst[j + 1] = lst[j]
-
+            
+            #Move one step left to continue checking previous elements.
+            #We keep doing this until we find the right spot for the key.
            j = j - 1
 
         lst[j + 1] = key
