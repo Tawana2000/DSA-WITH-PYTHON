@@ -2,7 +2,7 @@
 """
 1.Implement selection sort to sort in descending order.
 2.Keep a counter for number of swaps.
-3.Print the sorted array and total swaps.
+3.Print the sorted array and total swaps. 
 """
 
 class Selection_Sort:
