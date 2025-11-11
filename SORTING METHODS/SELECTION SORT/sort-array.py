@@ -24,3 +24,4 @@ class Selection_Sort:
     
 SS = Selection_Sort()
 print(SS.sort_array([5, 2, 9, 1, 5, 6]))
+print(SS.sort_array([15, 8, 3, 10, 5, 11])) 
