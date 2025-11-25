@@ -54,3 +54,7 @@ class InsertionSortChallenge:
         print(f"Total Shifts: {shifts}")
 
         return arr
+
+# Run the challenge on the required input
+sorter = InsertionSortChallenge()
+sorter.solve([13, 2, 9, 7, 1, 6])
