@@ -13,3 +13,44 @@ Every shift operation
 The array after each step
 """
 
+class InsertionSortChallenge:
+
+    def solve(self, arr):
+
+        comparisons = 0
+        shifts = 0
+
+        print(f"Original Array: {arr}\n")
+
+        for i in range(1, len(arr)):
+            key = arr[i]
+            j = i - 1
+
+            # Start tracing this step
+            print(f"Step {i} (key = {key}):")
+
+            # While-loop with correct comparison counting
+            while True:
+                comparisons += 1  # checking j >= 0
+
+                if j >= 0 and arr[j] > key:
+                    comparisons += 1  # checking arr[j] > key
+
+                    # shift the element right
+                    arr[j + 1] = arr[j]
+                    shifts += 1
+                    print(f"Shift: moved {arr[j]} → index {j+1}")
+
+                    j -= 1
+                else:
+                    break
+
+            # insert key at correct position
+            arr[j + 1] = key
+
+            print(f"  Result: {arr}\n")
+
+        print(f"Total Comparisons: {comparisons}")
+        print(f"Total Shifts: {shifts}")
+
+        return arr
