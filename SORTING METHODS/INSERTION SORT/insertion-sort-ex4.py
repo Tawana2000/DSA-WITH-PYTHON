@@ -40,3 +40,13 @@ class InsertionSortChallenge:
                     j -= 1
                 else:
                     break
+
+            # Insert key at the proper location
+            arr[j + 1] = key
+
+            print(f"  Result: {arr}\n")
+
+        print(f"Total Comparisons: {comparisons}")
+        print(f"Total Shifts: {shifts}")
+
+        return arr
