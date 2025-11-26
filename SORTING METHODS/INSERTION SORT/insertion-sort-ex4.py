@@ -26,35 +26,17 @@ class InsertionSortChallenge:
             key = arr[i]
             j = i - 1
 
-            # Start tracing this step
             print(f"Step {i} (key = {key}):")
 
-            # While-loop with correct comparison counting
-            while True:
-                comparisons += 1  # checking j >= 0
+            # Optimized: single while condition
+            while j >= 0:
+                comparisons += 1  # checking arr[j] > key
 
-                if j >= 0 and arr[j] > key:
-                    comparisons += 1  # checking arr[j] > key
-
+                if arr[j] > key:
                     # shift the element right
                     arr[j + 1] = arr[j]
                     shifts += 1
-                    print(f"Shift: moved {arr[j]} → index {j+1}")
-
+                    print(f"  Shift: moved {arr[j]} → index {j+1}")
                     j -= 1
                 else:
                     break
-
-            # insert key at correct position
-            arr[j + 1] = key
-
-            print(f"  Result: {arr}\n")
-
-        print(f"Total Comparisons: {comparisons}")
-        print(f"Total Shifts: {shifts}")
-
-        return arr
-
-# Run the challenge on the required input
-sorter = InsertionSortChallenge()
-sorter.solve([13, 2, 9, 7, 1, 6])
