@@ -14,6 +14,8 @@ products = [
 class ProductSorter:
 
     def store_products(self, products):
+        
+        # Sort by price (index 1)
         products = sorted(products, key=lambda x: x[1])
 
         print("Sorted products (cheapest to most expensive):")
