@@ -26,3 +26,12 @@ def bubble_sort_employee(employees):
             break
 
     return employees, swaps
+
+
+employees = [
+    ("Alice", 5200),
+    ("Bob", 4800),
+    ("Charlie", 6000),
+    ("David", 4500),
+    ("Eve", 5200)
+]
