@@ -35,3 +35,9 @@ employees = [
     ("David", 4500),
     ("Eve", 5200)
 ]
+
+sorted_employees, swap_count = bubble_sort_employee(employees)
+
+print("Sorted Employees by Salary (Descending):")
+for name, salary in sorted_employees:
+    print(f"{name} - ${salary}")
