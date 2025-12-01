@@ -15,6 +15,9 @@ def insertion_sort(lst):
         lst[j + 1] = key
 
     return lst
+    
+# To make it user input
+# lst = list(map(int, input("Enter the list elements separated by a space: ").split()))
 
 lst = [1, 15, 6, 8, 2, 5, 9]
 print(insertion_sort(lst))
