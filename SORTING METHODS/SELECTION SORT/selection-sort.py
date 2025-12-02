@@ -12,7 +12,6 @@ def selection_sort(lst):
                 min_max = j
 
         lst[i], lst[min_max] = lst[min_max], lst[i]
-
     return lst
     
 lst = list(map(int, input("Enter the list elements separated by space: ").split()))            #if taking integer input lst = list(map(int, input().split()))
