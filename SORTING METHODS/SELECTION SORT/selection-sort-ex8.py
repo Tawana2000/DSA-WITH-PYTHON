@@ -36,7 +36,6 @@ class Selection_Sort:
 
             patients[i], patients[low_high_urgency] = patients[low_high_urgency], patients[i]
         
-        
         for name, age, urgency, department, arrival_time in patients:
             formatted_time = f"{arrival_time//100:02}:{arrival_time%100:02}"   
             print(f"Name: {name} | Age: {age} | Urgency: {urgency} | Department: {department} | Arrival: {formatted_time}")
