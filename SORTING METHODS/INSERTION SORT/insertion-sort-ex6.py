@@ -49,6 +49,12 @@ class InsertionSortEmployees:
                     break
 
             employees[j + 1] = key
+
+            print(f"  Result: {employees}\n")
+
+        print(f"Total Comparisons: {comparisons}")
+        print(f"Total Shifts: {shifts}")
+
         return employees
 
 
