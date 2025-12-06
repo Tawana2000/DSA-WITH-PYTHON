@@ -95,7 +95,7 @@ class InsertionSortChallenge:
                         print(f"  Shift: {a[j]} -> index {j+1}  |  Array: {a}")
                     j -= 1
                 else:
-                    break 
+                    break  # ← this is the key optimization (O(n) best case)
 
             # Place key in correct position
             a[j + 1] = key
