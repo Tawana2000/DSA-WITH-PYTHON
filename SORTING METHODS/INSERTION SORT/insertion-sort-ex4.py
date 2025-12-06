@@ -55,3 +55,58 @@ class InsertionSortChallenge:
 # Run the optimized version
 sorter = InsertionSortChallenge()
 sorter.solve([13, 2, 9, 7, 1, 6])
+
+
+# More Optimized version
+"""
+class InsertionSortChallenge:
+    def solve(self, arr, *, verbose=False):
+        n = len(arr)
+        if n <= 1:
+            if verbose:
+                print(f"Original: {arr}")
+                print("Total Comparisons: 0")
+                print("Total Shifts: 0")
+            return arr[:], 0, 0
+
+        # Work on a copy to avoid mutating input
+        a = arr[:]
+        comparisons = 0
+        shifts = 0
+
+        if verbose:
+            print(f"Original Array: {a}\n")
+
+        # Main insertion sort loop - fully unrolled inner logic
+        for i in range(1, n):
+            key = a[i]
+            j = i - 1
+
+            if verbose:
+                print(f"Step {i}: key = {key}")
+
+            # Inner while loop: shift elements > key to the right
+            while j >= 0:
+                comparisons += 1
+                if a[j] > key:               # actual comparison
+                    a[j + 1] = a[j]          # shift
+                    shifts += 1
+                    if verbose:
+                        print(f"  Shift: {a[j]} -> index {j+1}  |  Array: {a}")
+                    j -= 1
+                else:
+                    break 
+
+            # Place key in correct position
+            a[j + 1] = key
+
+            if verbose:
+                print(f"  After insert: {a}\n")
+
+        if verbose:
+            print(f"Final Sorted Array: {a}\n")
+            print(f"Total Comparisons: {comparisons}")
+            print(f"Total Shifts     : {shifts}")
+
+        return a, comparisons, shifts
+"""
