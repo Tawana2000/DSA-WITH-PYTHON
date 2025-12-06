@@ -59,6 +59,14 @@ sorter.solve([13, 2, 9, 7, 1, 6])
 
 # More Optimized version
 """
+This optimization includes:
+- Minimal Python overhead
+- Exact comparison & shift counting (as required by HackerRank, etc.)
+- No list slicing, no extra objects, no function calls in hot loop
+- Optional verbose mode for debugging
+
+"""
+"""
 class InsertionSortChallenge:
     def solve(self, arr, *, verbose=False):
         n = len(arr)
