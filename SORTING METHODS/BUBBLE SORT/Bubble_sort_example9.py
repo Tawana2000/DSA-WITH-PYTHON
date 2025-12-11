@@ -69,7 +69,8 @@ def bubble_sort_employee(employees):
                 employees[j], employees[j + 1] = emp_next, emp_j
                 swapped = True
                 swaps += 1
-
+       
+        # Early exit if sorted
         if not swapped:
             break
 
