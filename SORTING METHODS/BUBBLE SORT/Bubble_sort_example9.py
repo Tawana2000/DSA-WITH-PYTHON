@@ -57,7 +57,8 @@ def bubble_sort_employee(employees):
 
         swapped = False
         limit = n - 1 - i  # local copy, avoids repeated subtraction
-
+        
+        # Loop with optimized local variable access
         for j in range(limit):
 
             emp_j = employees[j]        # local reference (faster)
