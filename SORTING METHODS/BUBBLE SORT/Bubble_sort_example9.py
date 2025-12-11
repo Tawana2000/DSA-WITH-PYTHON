@@ -43,3 +43,50 @@ for name, salary in sorted_employees:
     print(f"{name} - ${salary}")
 
 print(f"\nTotal number of swaps: {swap_count}")
+
+
+
+# More Optimized Version
+"""
+def bubble_sort_employee(employees):
+
+    n = len(employees)
+    swaps = 0
+
+    for i in range(n - 1):
+
+        swapped = False
+        limit = n - 1 - i  # local copy, avoids repeated subtraction
+
+        for j in range(limit):
+
+            emp_j = employees[j]        # local reference (faster)
+            emp_next = employees[j + 1] # local reference
+
+            if emp_j[1] < emp_next[1]:
+                employees[j], employees[j + 1] = emp_next, emp_j
+                swapped = True
+                swaps += 1
+
+        if not swapped:
+            break
+
+    return employees, swaps
+
+
+employees = [
+    ("Alice", 5200),
+    ("Bob", 4800),
+    ("Charlie", 6000),
+    ("David", 4500),
+    ("Eve", 5200)
+]
+
+sorted_employees, swap_count = bubble_sort_employee(employees)
+
+print("Sorted Employees by Salary (Descending):")
+for name, salary in sorted_employees:
+    print(f"{name} - ${salary}")
+
+print(f"\nTotal number of swaps: {swap_count}")
+"""
