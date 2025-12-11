@@ -64,6 +64,7 @@ def bubble_sort_employee(employees):
             emp_j = employees[j]        # local reference (faster)
             emp_next = employees[j + 1] # local reference
 
+            # Compare salaries for DESCENDING order
             if emp_j[1] < emp_next[1]:
                 employees[j], employees[j + 1] = emp_next, emp_j
                 swapped = True
