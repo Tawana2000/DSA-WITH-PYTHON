@@ -57,8 +57,6 @@ class InsertionSortEmployees:
 
         return employees
 
-
-# Example data
 employees = [
     ("Alice", 5200, 3),
     ("Bob", 5200, 5),
