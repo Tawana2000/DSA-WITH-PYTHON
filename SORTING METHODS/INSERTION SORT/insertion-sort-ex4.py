@@ -28,7 +28,6 @@ class InsertionSortChallenge:
 
             print(f"Step {i} (key = {key}):")
 
-            # Optimized: single while condition
             while j >= 0:
                 comparisons += 1  # checking arr[j] > key
 
