@@ -7,7 +7,6 @@ def count_occurrence(lst, n):
     for element in lst:
         if element == n:
             count +=1
-
     return count
 
 lst = [2, 8, 13, 6, 6, 9, 7, 6, 6]
