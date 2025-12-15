@@ -10,7 +10,6 @@ def binary_search(lst, target, low, high):
         
         elif lst[mid] > target:
             return binary_search(lst, target, low, mid - 1)
-        
         else:
             return binary_search(lst, target, mid + 1, high)
         
