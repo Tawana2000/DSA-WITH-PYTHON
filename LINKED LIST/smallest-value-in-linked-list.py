@@ -19,7 +19,6 @@ class Linkedlist:
         node3 = Node(50)
         node2.next = node3
         
-     
     #Append a node at the end
     def append_node(self, data):
         new_node = Node(data)
