@@ -8,7 +8,10 @@ def merge_sort(lst):
     
     mid = len(lst) // 2
 
+    #Left Half
     left_partition = merge_sort(lst[: mid])
+    
+    #Right Half
     righ_partition = merge_sort(lst[mid :])
 
     return merge(left_partition, righ_partition)
