@@ -7,6 +7,7 @@ def merge_sort(lst):
     
     print(f'lst: {lst}')
     mid = len(lst) // 2
+    
     print(f'mid: {lst[mid]}')
 
     left = merge_sort(lst[:mid])
