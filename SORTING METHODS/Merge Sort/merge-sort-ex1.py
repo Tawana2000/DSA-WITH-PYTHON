@@ -38,3 +38,6 @@ def merge(left, right):
 
 scores = [72, 88, 64, 90, 55, 81]
 print(f"Unsorted Scores: {scores}")
+
+
+print(f"Sorted Scores = {merge_sort(scores)}")
