@@ -59,3 +59,13 @@ def merge(left, right):
     return result
 
 print(f"Sorted List: {merge_sort(employees)}")
+
+employees = [
+    ("Alice", 5200),
+    ("Bob", 4800),
+    ("Charlie", 6000),
+    ("David", 4500),
+    ("Eve", 5200)
+]
+
+print(f"Unsorted List: {employees}")
