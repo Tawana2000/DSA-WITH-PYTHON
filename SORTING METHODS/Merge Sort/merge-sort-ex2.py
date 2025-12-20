@@ -20,3 +20,42 @@ Expected Output:
     ("Charlie", 6000)
 ]
 """
+
+# Use Merge sort, Compare using salary (index1), Ensure the sort is stable, Return the sortes list
+
+
+def merge_sort(employees):
+
+    if len(employees) <= 1:
+        return employees
+    
+    mid = len(employees) // 2
+
+    left_partition = merge_sort(employees[:mid])
+    right_partition = merge_sort(employees[mid:])
+
+    return merge(left_partition, right_partition)
+
+
+def merge(left, right):
+
+    result = []
+
+    i, j = 0, 0
+
+    while i < len(left) and j < len(right):
+
+        if left[i][1] <= right[j][1]:
+            result.append(left[i])
+            i += 1
+
+        else:
+            result.append(right[j])
+            j += 1
+
+    result.extend(left[i:])
+    result.extend(right[j:])
+
+    return result
+
+print(f"Sorted List: {merge_sort(employees)}")
