@@ -43,6 +43,5 @@ class Insertion_Sort:
 
         return arr
 
-
 IS = Insertion_Sort()
 IS.compare_shift([12, 5, 7, 3, 11, 2])
