@@ -36,7 +36,6 @@ def merge_sort(employees):
 
     return merge(left_partition, right_partition)
 
-
 def merge(left, right):
 
     result = []
