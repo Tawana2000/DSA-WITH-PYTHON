@@ -3,7 +3,7 @@
 def merge_sort(lst):
 
     if len(lst) <= 1:
-        return lst
+        return lst, 0
     
     mid = len(lst) // 2
 
@@ -44,5 +44,5 @@ lst = [10, 4, 7, 1, 9, 3]
 print(f"Original List: {lst}")
 
 sorted_list, comparisons_count = merge_sort(lst)
-print(f" Sorted List: {sorted_list}")
+print(f"Sorted List: {sorted_list}")
 print(f"Total Comparisons: {comparisons_count}")
