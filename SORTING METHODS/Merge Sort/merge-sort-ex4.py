@@ -44,6 +44,7 @@ def merge(left, right):
 
     output.extend(left[i:])
     output.extend(right[j:])
+    print(f"Merging {left} and {right} -> {output}")
 
     return output
 
