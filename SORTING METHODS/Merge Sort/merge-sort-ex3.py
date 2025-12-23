@@ -7,10 +7,14 @@ def merge_sort(lst):
     
     mid = len(lst) // 2
 
-    left_partition = merge_sort(lst[:mid])
-    right_partition = merge_sort(lst[mid:])
+    left_sorted, left_comparisons = merge_sort(lst[:mid])
+    right_sorted, right_comparisons = merge_sort(lst[mid:])
 
-    return merge(left_partition, right_partition)
+    merged, merge_comparisons = merge(left_sorted, right_sorted)
+
+    total_comparisons = left_comparisons + right_comparisons + merge_comparisons
+
+    return merged, total_comparisons
 
 def merge(left, right):
 
@@ -21,9 +25,9 @@ def merge(left, right):
     comparisons = 0
 
     while i < len(left) and j < len(right):
+        comparisons += 1
 
         if left[i] < right[j]:
-            comparisons += 1
             result.append(left[i])
             i += 1
 
@@ -34,10 +38,11 @@ def merge(left, right):
     result.extend(left[i:])
     result.extend(right[j:])
 
-    return result, comparisons
+    return result
 
 lst = [10, 4, 7, 1, 9, 3]
 print(f"Original List: {lst}")
 
-print("Sorted List: ")
-print(merge_sort(lst))
+sorted_list, comparisons_count = merge_sort(lst)
+print(f" Sorted List: {sorted_list}")
+print(f"Total Comparisons: {comparisons_count}")
