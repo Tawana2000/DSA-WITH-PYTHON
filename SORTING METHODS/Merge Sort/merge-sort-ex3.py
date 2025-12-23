@@ -38,7 +38,7 @@ def merge(left, right):
     result.extend(left[i:])
     result.extend(right[j:])
 
-    return result
+    return result, comparisons
 
 lst = [10, 4, 7, 1, 9, 3]
 print(f"Original List: {lst}")
