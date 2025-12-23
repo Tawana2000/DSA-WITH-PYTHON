@@ -13,3 +13,39 @@ Merging [7, 2] and [8, 5, 3, 1] → [8, 7, 5, 3, 2, 1]
 
 Final Sorted Array: [8, 7, 5, 3, 2, 1]
 """
+
+def merge_sort(arr):
+
+    if len(arr) <= 1:
+        return arr
+    
+    mid = len(arr) // 2
+
+    sorted_left = merge_sort(arr[:mid])
+    sorted_right = merge_sort(arr[mid:])
+
+    return merge(sorted_left, sorted_right)
+
+def merge(left, right):
+
+    output = []
+    i = 0
+    j = 0
+
+    while i < len(left) and j < len(right):
+
+        if left[i] >= right[j]:
+            output.append(left[i])
+            i += 1
+
+        else:
+            output.append(right[j])
+            j += 1
+
+    output.extend(left[i:])
+    output.extend(right[j:])
+
+    return output
+
+arr = [5, 1, 8, 3, 2, 7]
+print(f"Final Sorted Array: {merge_sort(arr)}")
