@@ -26,3 +26,43 @@ Output:
     ("Eve", 78)
 ]
 """
+
+
+def merge_sort(students):
+
+    if len(students) <= 1:
+        return students
+    
+    mid = len(students) // 2
+
+    left_sorted = merge_sort(students[:mid])
+    right_sorted = merge_sort(students[mid:])
+
+    return merge(left_sorted, right_sorted)
+
+def merge(left, right):
+
+    result = []
+
+    i = 0
+    j = 0
+
+    while i < len(left) and j < len(right):
+
+        if left[i][1] > right[j][1]:
+            result.append(left[i])
+            i += 1
+
+        elif left[i][1] == right[j][1] and left[i][0] < right[j][0]:
+            result.append(left[i])
+            i += 1
+
+        else:
+            result.append(right[j])
+            j += 1
+
+    result.extend(left[i:])
+    result.extend(right[j:])
+    
+    return result
+
