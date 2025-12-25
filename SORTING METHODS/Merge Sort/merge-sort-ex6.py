@@ -65,6 +65,15 @@ def merge(left, right):
     return result
 
 
+points = [
+    (1, 2),
+    (3, 4),
+    (0, 1),
+    (1, 1),
+    (2, 0)
+]
+
+
 print("Original Points: ")
 print(points)
 
