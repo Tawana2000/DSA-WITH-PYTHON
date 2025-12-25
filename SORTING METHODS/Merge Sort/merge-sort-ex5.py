@@ -66,3 +66,15 @@ def merge(left, right):
     
     return result
 
+students = [
+    ("Alice", 85),
+    ("Bob", 92),
+    ("Charlie", 85),
+    ("David", 92),
+    ("Eve", 78)
+]
+
+sorted_students = merge_sort(students)
+
+for name, grade in sorted_students:
+    print(f"{name}, {grade}")
