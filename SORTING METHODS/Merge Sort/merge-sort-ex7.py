@@ -63,3 +63,20 @@ def merge(left, right):
     result.extend(right[j:])
 
     return result
+
+
+points = [
+    (1, 2),
+    (3, 4),
+    (0, 1),
+    (1, 1),
+    (2, 0)
+]
+
+print("Original Points: ")
+print(points)
+
+sorted_points = merge_sort(points)
+
+print(f"\nSorted Points (by distance from origin):")
+print(sorted_points)
