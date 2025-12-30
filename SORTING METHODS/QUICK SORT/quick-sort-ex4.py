@@ -52,4 +52,8 @@ rides = [
 ]
 
 sorted_result = sort_rides(rides)
-print(sorted_result)
+
+print("[")
+for ride in rides:
+    print(f"{ride},")
+print("]")
