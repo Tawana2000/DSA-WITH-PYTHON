@@ -5,7 +5,6 @@ Sort the points using Quick Sort based on:
 - If distance are equal -> Smaller x first
 - if x si also equal -> smaller y first
 
-
 Input
 
 points = [
