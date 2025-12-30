@@ -65,7 +65,6 @@ def quick_sort(points):
         else:
             right_elements.append(pairs)
 
-    
     return quick_sort(left_elements) + [pivot] + quick_sort(right_elements)
 
 
