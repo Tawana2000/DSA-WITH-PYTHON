@@ -10,7 +10,6 @@ Output:
 
 def substring_index(words, target):
 
-
     for index, word in enumerate(words):
         if target in word:
             return index
