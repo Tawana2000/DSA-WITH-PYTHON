@@ -15,5 +15,4 @@ def first_greater(lst, target):
             return index
     
     return None
-
 print(first_greater([3, 7, 1, 9, 4], 5))
