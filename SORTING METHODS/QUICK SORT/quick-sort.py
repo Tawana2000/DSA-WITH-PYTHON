@@ -13,7 +13,6 @@ def quick_sort(lst):
     else:
         pivot = lst.pop()
 
-    
     right = []
     left = []
 
