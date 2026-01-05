@@ -51,7 +51,6 @@ def emergency_dispatch(calls):
         else:
             right_sorted_call.append(call)
 
-
     return emergency_dispatch(left_sorted_calls) + [pivot] + emergency_dispatch(right_sorted_call)
 
 
