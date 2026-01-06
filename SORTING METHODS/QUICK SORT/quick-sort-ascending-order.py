@@ -22,7 +22,6 @@ def quick_sort(lst):
 
     return quick_sort(left_elements) + [pivot] + quick_sort(right_elements)
 
-
 data_list = list(map(int, input("Enter the list elements separated by a space:").split()))
 
 print(quick_sort(data_list))
