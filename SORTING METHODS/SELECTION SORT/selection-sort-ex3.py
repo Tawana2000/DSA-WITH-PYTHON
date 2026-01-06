@@ -30,7 +30,6 @@ class ProductSorter:
 
         return products, cheapest, most_expensive
 
-
 products = [
     ["Keyboard", 49],
     ["Monitor", 120],
