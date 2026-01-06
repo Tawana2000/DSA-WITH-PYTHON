@@ -10,7 +10,6 @@ def selection_sort(lst):
                 max = j
 
         lst[i], lst[max] = lst[max], lst[i]
-
     return lst
 
 lst = list(map(int, input().split()))
