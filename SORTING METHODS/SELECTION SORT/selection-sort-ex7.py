@@ -23,7 +23,6 @@ class Selection_Sort:
 
         return books
     
-
 books = [
     ["The Alchemist", "Paulo Coelho", 1988, 4.7],
     ["1984", "George Orwell", 1949, 4.9],
