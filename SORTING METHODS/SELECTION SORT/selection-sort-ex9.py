@@ -53,7 +53,6 @@ class Selection_Sort:
 
         return applicants
 
-
 applicants = [
     ["Alice", "Master's", 5, 88, 92, 915],
     ["Bob", "Bachelor's", 6, 90, 88, 930],
