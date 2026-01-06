@@ -15,7 +15,6 @@ def count_swaps(lst):
             lst[i], lst[min] = lst[min], lst[i]
 
             swaps += 1
-
     return swaps
 
 lst = list(map(int, input().split()))
