@@ -16,3 +16,23 @@ The Task is:
 - Do not use loops inside loop
 - Return the index, not the value
 """
+
+def last_less_salary(salaries, target):
+
+    left = 0
+    right = len(salaries)  -1
+    answer = -1
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if target >= salaries[mid]:
+            answer = mid
+            left = mid + 1
+
+        else:
+            right = mid - 1
+
+    return answer
+
+salaries = [32000, 40000, 48000, 55000, 60000, 720000]
