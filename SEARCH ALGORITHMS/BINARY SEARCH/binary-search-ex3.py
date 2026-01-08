@@ -36,3 +36,5 @@ def last_less_salary(salaries, target):
     return answer
 
 salaries = [32000, 40000, 48000, 55000, 60000, 720000]
+
+print(last_less_salary(salaries, 55000))
