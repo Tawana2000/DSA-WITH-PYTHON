@@ -42,3 +42,13 @@ def first_available_agent(agents, time_limit):
             left = mid + 1
 
     return answer
+
+agents = [
+    ("Alice", 5),
+    ("Bob", 10),
+    ("Charlie", 15),
+    ("David", 20),
+    ("Eve", 30)
+]
+
+print(first_available_agent(agents, 18))
