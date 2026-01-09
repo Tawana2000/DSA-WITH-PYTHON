@@ -24,3 +24,21 @@ time_limit = 18
 Expected Outpu:
 2
 """
+
+
+def first_available_agent(agents, time_limit):
+
+    left = 0
+    right = len(agents) - 1
+    answer = -1 
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if agents[mid][1] <= time_limit:
+            answer = mid
+            right = mid - 1   # move left to find earlier agent
+        else:
+            left = mid + 1
+
+    return answer
