@@ -46,7 +46,6 @@ list2.append(20)
 list2.append(22)
 list2.append(24)
 
-
 print(f"List 1: {list1.print_list()}")
 print(f"List 2: {list2.print_list()}")
 
