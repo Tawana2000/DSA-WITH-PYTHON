@@ -36,11 +36,9 @@ class Linkedlist:
 
         return True 
 
-
 ll = Linkedlist()
 ll.create_linked_list()
 print(f"The linked list is {'sorted' if ll.is_sorted() else 'not sorted'}")
-
 
 """
 This program checks if the linked list sorted in ascending order, I traversed the list and checked if next node is smaller than current node, that's how we know that the list is not sorted.
