@@ -96,7 +96,6 @@ class Linkedlist:
         return slow.data
 
 ll = Linkedlist()
-
 data_list = list(map(int, input("Enter the list Elements: ").split()))
 
 for node in data_list:
