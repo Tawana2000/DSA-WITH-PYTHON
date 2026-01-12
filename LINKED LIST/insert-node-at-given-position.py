@@ -42,7 +42,6 @@ class Linkedlist:
         new_node.next = current.next
         current.next = new_node
         
-
 ll = Linkedlist()
 ll.create_linked_list()
 position = int(input("Enter the position where you want to insert the node: "))
