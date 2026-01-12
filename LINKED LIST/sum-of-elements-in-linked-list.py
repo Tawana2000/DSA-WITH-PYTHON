@@ -25,7 +25,6 @@ class Linkedlist:
         node4.next = node5
         
     def calculate_sum(self):
-
         total = 0
         current = self.head
 
