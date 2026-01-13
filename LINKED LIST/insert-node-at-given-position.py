@@ -21,7 +21,6 @@ class Linkedlist:
         node2.next = node3
         node3.next = node4
 
-
     def display(self):
         current = self.head
         while current:
@@ -29,7 +28,6 @@ class Linkedlist:
             current = current.next
 
         print(None)
-
 
     def insert_node_at_position(self, data, position):
         new_node = Node(data)
