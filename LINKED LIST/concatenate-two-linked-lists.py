@@ -35,7 +35,6 @@ class LinkedList:
             current = current.next
         current.next = second_list.head
 
-
 list1 = LinkedList()
 list1.append(10)
 list1.append(12)
