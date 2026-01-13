@@ -45,7 +45,6 @@ class Linkedlist:
             current.data = value
             current = current.next
 
-
 ll = Linkedlist()
 ll.create_linked_list()
 print("Original Linked List: ")
