@@ -33,7 +33,7 @@ class Linkedlist:
             current = current.next
 
         return total
-
+        
 ll = Linkedlist()
 ll.creat_linked_list()
 print(f"Sum of node data: {ll.calculate_sum()}")
