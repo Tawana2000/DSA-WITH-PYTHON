@@ -13,7 +13,6 @@ def target_index(lst, target):
     for index, element in enumerate(lst):
         if element == target:
             return index
-        
     return None
 
 lst = [4, 2, 7, 2, 9, 2]
