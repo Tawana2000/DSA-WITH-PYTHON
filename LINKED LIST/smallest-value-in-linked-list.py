@@ -78,7 +78,6 @@ class Linkedlist:
             current = current.next
         return smallest
 
-
 ll = Linkedlist()
 
 ll.insert_node(90)
