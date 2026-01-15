@@ -15,7 +15,6 @@ def all_indexes(lst, target):
     for index, element in enumerate(lst):
         if element == target:
             indexes.append(index)
-    
     return indexes
 
 print(all_indexes([4, 2, 7, 2, 9, 2], 2))
