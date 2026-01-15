@@ -15,7 +15,6 @@ def count_occurences(lst, target):
     for element in lst:
         if element == target:
             count += 1
-
     return count
 
 print(count_occurences([4, 2, 7, 2, 9, 2], 2))
