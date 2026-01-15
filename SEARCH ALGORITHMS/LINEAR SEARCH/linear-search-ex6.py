@@ -22,7 +22,6 @@ def highest_earner(employees):
     for employee in employees:
         if employee[1] > highest[1]:
             highest = employee
-
     return highest
 
 employees = [
