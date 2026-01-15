@@ -28,7 +28,6 @@ class Linkedlist:
         while current:
             count += 1
             current = current.next
-
         return count
 
 ll = Linkedlist()
