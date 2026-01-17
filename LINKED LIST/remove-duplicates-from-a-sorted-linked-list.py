@@ -49,7 +49,6 @@ class Linkedlist:
             else:
                 current = current.next
 
-
 ll = Linkedlist()
 ll.create_linked_list()
 print("Original List:")
