@@ -16,7 +16,6 @@ class Linkedlist:
         node3 = Node(int(input()))
         node4 = Node(int(input()))
 
-
         self.head = node1
         node1.next = node2
         node2.next = node3
