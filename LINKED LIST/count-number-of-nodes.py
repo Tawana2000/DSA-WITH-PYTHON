@@ -24,7 +24,6 @@ class Linkedlist:
         current = self.head
         
         count = 0
-
         while current:
             count += 1
             current = current.next
