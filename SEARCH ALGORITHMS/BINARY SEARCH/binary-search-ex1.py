@@ -15,7 +15,6 @@ Rules:
 - NO built-in .index()
 """
 
-
 def delivery_times(slots, target):
 
     left = 0 
