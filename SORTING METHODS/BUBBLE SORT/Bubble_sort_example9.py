@@ -27,7 +27,6 @@ def bubble_sort_employee(employees):
 
     return employees, swaps
 
-
 employees = [
     ("Alice", 5200),
     ("Bob", 4800),
