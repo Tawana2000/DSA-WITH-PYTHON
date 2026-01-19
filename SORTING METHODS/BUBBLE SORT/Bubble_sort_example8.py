@@ -20,7 +20,6 @@ def bubble_sort_products(products):
 
     return products
 
-
 products = [
     ("Laptop", 1200),
     ("Phone", 800),
