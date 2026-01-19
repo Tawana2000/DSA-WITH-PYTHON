@@ -8,7 +8,6 @@ def bubble_sort(lst):
             if lst[j] < lst[j + 1]:
                 lst[j], lst[j + 1] = lst[j + 1], lst[j]
 
-
     return lst
 
 result = list(map(int, input().split()))  # Take integer input and convert it to a list
