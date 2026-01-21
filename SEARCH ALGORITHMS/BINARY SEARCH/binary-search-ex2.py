@@ -27,7 +27,6 @@ def first_salary_at_least(salaries, target):
 
         else:
             left = mid + 1
-
     return answer
 
 salaries = [32000, 40000, 48000, 55000, 60000, 72000]
