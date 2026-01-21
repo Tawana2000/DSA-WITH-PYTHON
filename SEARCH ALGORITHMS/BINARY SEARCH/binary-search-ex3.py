@@ -32,7 +32,6 @@ def last_less_salary(salaries, target):
 
         else:
             right = mid - 1
-
     return answer
 
 salaries = [32000, 40000, 48000, 55000, 60000, 720000]
