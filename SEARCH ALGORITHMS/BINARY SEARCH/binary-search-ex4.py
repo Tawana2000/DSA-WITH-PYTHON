@@ -25,7 +25,6 @@ Expected Outpu:
 2
 """
 
-
 def first_available_agent(agents, time_limit):
 
     left = 0
