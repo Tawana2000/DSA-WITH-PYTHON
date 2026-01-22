@@ -44,7 +44,6 @@ for name, salary in sorted_employees:
 print(f"\nTotal number of swaps: {swap_count}")
 
 
-
 # More Optimized Version
 """
 def bubble_sort_employee(employees):
