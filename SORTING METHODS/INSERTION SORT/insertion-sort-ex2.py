@@ -25,7 +25,6 @@ class Insertion_Sort:
 
         print(f"Total Shifts: {i + 1}")
         return arr
-        
-    
+            
 IS = Insertion_Sort()
 IS.sort_trace([8, 4, 9, 2, 6])
