@@ -63,7 +63,6 @@ def merge(left, right):
 
     return result
 
-
 points = [
     (1, 2),
     (3, 4),
