@@ -13,7 +13,6 @@ def merge_sort(scores):
 
     return merge(left_partition, right_partition)
 
-
 def merge(left, right):
 
     result = []
