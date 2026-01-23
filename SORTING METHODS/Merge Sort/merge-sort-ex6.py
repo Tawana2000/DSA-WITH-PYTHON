@@ -15,7 +15,6 @@ Sort Rules:
 def distance(p):
     return p[0] ** 2 + p[1]**2
 
-
 def merge_sort(points):
 
     if len(points) <= 1:
