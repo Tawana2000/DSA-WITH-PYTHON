@@ -23,7 +23,6 @@ Expected Output:
 
 # Use Merge sort, Compare using salary (index1), Ensure the sort is stable, Return the sortes list
 
-
 def merge_sort(employees):
 
     if len(employees) <= 1:
