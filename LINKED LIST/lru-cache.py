@@ -72,3 +72,12 @@ class LRUCache:
             lru = self.tail
             self._remove(lru)
             del self.cache[lru.key]
+
+
+if __name__ == "__main__":
+    lru = LRUCache(2)
+    lru.put(1, 1)
+    lru.put(2, 2)
+    print(lru.get(1))
+    lru.put(3, 3)    
+    print(lru.get(2))
