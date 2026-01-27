@@ -12,6 +12,15 @@ Rules:
 -> Hash Map -> fast access
 """
 
+"""
+Approach:
+Doubly Linked List:
+-> Head: Most Recently Used (MRU)
+-> Tail: Least Recently Used (LRU)
+Hash Map:
+-> Key: linked list node
+"""
+
 class Node:
     def __init__(self, key, value):
         self.key = key
