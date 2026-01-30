@@ -65,7 +65,6 @@ class LinkedList:
             current = current.next
         print(None)
 
-
     #Reverse Linked List
     def reverse_linked_list(self):
         prev_node = None
