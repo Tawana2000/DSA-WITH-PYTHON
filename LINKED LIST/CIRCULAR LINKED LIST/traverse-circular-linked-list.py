@@ -19,7 +19,6 @@ class CircularLinkedList:
             print("Empty Linked LIst")
             return
         
-
         current = self.head
         while current.next is not self.head:
             print(f"{current.data} ->", end=" ")
