@@ -62,7 +62,6 @@ class CircularLinkedList:
 
         return total
 
-
 linked_list = CircularLinkedList()
 linked_list.create_linked_list()
 print(linked_list.compute_sum())
