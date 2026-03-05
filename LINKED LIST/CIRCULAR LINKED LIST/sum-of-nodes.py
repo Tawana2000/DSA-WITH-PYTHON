@@ -45,7 +45,6 @@ class CircularLinkedList:
             current = current.next
         print(f"{current.data} -> {self.head.data}")
 
-
     def compute_sum(self):
         if self.head is None:
             return 0
