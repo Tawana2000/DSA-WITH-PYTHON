@@ -7,7 +7,6 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-
     
 class CircularLinkedList:
 
@@ -37,7 +36,6 @@ class CircularLinkedList:
         node3.next = node4
         node4.next = self.head
 
-    
     def traverse_linked_list(self):
         current = self.head
         while current.next is not self.head:
