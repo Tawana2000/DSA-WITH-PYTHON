@@ -24,7 +24,6 @@ class CircularLinkedList:
         node3.next = node4
         node4.next = self.head
 
-
     def insert_node_at_the_end(self, data):
         new_node = Node(data)
 
