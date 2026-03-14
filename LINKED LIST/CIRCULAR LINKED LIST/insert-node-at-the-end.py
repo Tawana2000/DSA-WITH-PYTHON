@@ -58,7 +58,6 @@ class CircularLinkedList:
 
         print("(back to head)")
 
-
 linked_list = CircularLinkedList()
 linked_list.create_circular_linked_list()
 
